@@ -1,13 +1,14 @@
 # Emotion classification using fine-tuned transformers
 Assignment 4 for language analytics (S2023). This repository contains code for running emotion classification on headlines from a dataset of fake and real news. Furthermore, it holds code for plotting the results, as well as creating a table of the counts of each emotion for both real and fake news.
 
-## Data
+## Description of data
 The data used in this assignment is from Kaggle, and can be found through this [link](https://www.kaggle.com/datasets/jillanisofttech/fake-or-real-news).
 
 
-## Usage
+## Usage and reproducibility
+To reproduce the results follow the steps below. All terminal commands should be run from the root of the directory.
 1. Clone the repository
-2. Download the data from the link above, and place it in the `data` folder
+2. Download the data from the link above, and place it in the `data` folder (see repository structure)
 3. Create a virtual environment and install the required packages
 ```
 bash setup.sh
