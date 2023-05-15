@@ -1,0 +1,6 @@
+spacy
+transformers
+tensorflow-cpu
+pandas
+matplotlib
+tabulate
