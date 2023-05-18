@@ -13,15 +13,12 @@ To reproduce the results follow the steps below. All terminal commands should be
 ```
 bash setup.sh
 ```
-4. Activate the environment and run the code
+4. Run emotion classification and generate plots
 ```
-source env/bin/activate
-python src/emotion_classification.py
+bash run.sh
 ```
-5. To plot and create a table to summarise the results, run the following command
-```
-python src/summarise_results.py
-```
+The pipeline was developed and tested on [uCloud](https://cloud.sdu.dk/app/dashboard)(Ubuntu v22.10m, Coder python v1.77.3, python v3.10.7).
+
 
 ## Repository structure
 ```
@@ -29,13 +26,15 @@ python src/summarise_results.py
 │   ├── classified_emotions.csv
 │   └── fake_or_real_news.csv
 ├── figs
-│   └── emotion_plot.png
+│   ├── emotion_counts.png
+│   └── emotion_proportions.png
 ├── src
 │   ├── emotion_classification.py
 │   └── summarise_results.py
 ├── assignment_description.md
 ├── README.md
 ├── requirements.txt
+├── run.sh
 └── setup.sh
 ```
 

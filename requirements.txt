@@ -4,3 +4,4 @@ tensorflow-cpu
 pandas
 matplotlib
 tabulate
+seaborn

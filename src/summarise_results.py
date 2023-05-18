@@ -12,7 +12,7 @@ from pathlib import Path
 import numpy as np
 import seaborn as sns
 
-plt.rcParams['font.family'] = 'times new roman'
+plt.rcParams['font.family'] = 'serif'
 
 def most_prevalent(data:pd.DataFrame):
     """
