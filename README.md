@@ -2,7 +2,7 @@
 Assignment 4 for language analytics (S2023). This repository contains code for running emotion classification on headlines from a dataset of fake and real news. Furthermore, it holds code for plotting the results, as well as creating a table of the counts of each emotion for both real and fake news.
 
 ## Description of data
-The data used in this assignment is from Kaggle, and can be found through this [link](https://www.kaggle.com/datasets/jillanisofttech/fake-or-real-news).
+The data used in this assignment is from Kaggle, and can be found through this [link](https://www.kaggle.com/datasets/jillanisofttech/fake-or-real-news). It contains the title, text, and label of 7796 news articles. The label indicates whether the article is fake or real. The emotion classification was performed on the headlines of the news articles. 
 
 
 ## Usage and reproducibility

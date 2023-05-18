@@ -196,6 +196,10 @@ def main():
     path = Path(__file__)
     in_path = path.parents[1] / "data" / "classified_emotions.csv"
     fig_path = path.parents[1] / "figs" 
+
+    # ensure figs folder exists
+    if not fig_path.exists():
+        fig_path.mkdir()
     
     data = pd.read_csv(in_path)
     data = most_prevalent(data)

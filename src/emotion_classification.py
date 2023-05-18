@@ -1,10 +1,11 @@
 """
-
+Pipeline for classifying emotions in headlines from fake and real news articles. The following steps are taken:
+    - loads data
+    - classifies emotions in the headlines
+    - saves the data with the predicted emotions
 
 Author: Laura Bock Paulsen (202005791@post.au.dk)
 """
-
-import spacy
 import pandas as pd
 from transformers import pipeline
 from tqdm import tqdm
@@ -12,23 +13,25 @@ from pathlib import Path
 
 
 def classify_emotions(df:pd.DataFrame, text_column:str, nlp):
-    """Classifies the emotions of the cleaned tweets.
+    """
+    Classifies emotions in a dataframe of tweets.
+    
     Parameters
     ----------
 
     df : pd.DataFrame
-        Dataframe containing the tweets to classify
+        Dataframe containing the text to perform emotion classification on.
     
     text_column : str
-        Name of the column with text to perform emotion classification on
+        Name of the column with text
     
     nlp : transformers.pipeline
-        transformers pipeline for emotion classification
+        Transformers pipeline for emotion classification
 
     Returns
     -------
     df : pd.DataFrame
-        Dataframe containing the classified tweets
+        Dataframe containing the text and the predicted emotions
     """
     
     # create a new column for each emotion
